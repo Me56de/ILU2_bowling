@@ -16,7 +16,7 @@
 - [x] Le premier doit renvoyer "0"
 - [x] Le deuxième doit renvoyer "0"
 - [x] Le troisième doit renvoyer "20"
-- [ ] Le quatrième doit renvoyer "30"
-- [ ] Le cinquième doit renvoyer "18"
+- [x] Le quatrième doit renvoyer "30"
+- [x] Le cinquième doit renvoyer "18"
 - [ ] Le sixième doit renvoyer "24"
 

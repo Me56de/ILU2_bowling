@@ -13,28 +13,33 @@ public class GameTest {
 		game = new Game();
 	}
 
-	public void plusieursLancer(int nb_lancer, int nb_quille) {
-		for (int i = 0; i < nb_lancer; i++) {
+	public void plusieursLancer(int... nb_lancers) {
+		for (int nb_quille : nb_lancers) {
 			game.roll(nb_quille);
 		}
 	}
 
 	@Test
 	public void seulementUneQuille() {
-		plusieursLancer(20, 1);
+		plusieursLancer(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1);
 		assertEquals(20, game.score());
 	}
-	
+
 	@Test
 	public void miss20fois() {
-		plusieursLancer(20, 0);
+		plusieursLancer(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
 		assertEquals(0, game.score());
 	}
-	
-	@Test 
+
+	@Test
 	public void joueurDebutant() {
-		plusieursLancer(10, 1);
-		plusieursLancer(10, 2);
+		plusieursLancer(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2);
 		assertEquals(30, game.score());
+	}
+
+	@Test
+	public void premierSpare() {
+		plusieursLancer(7, 3, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+		assertEquals(18, game.score());
 	}
 }
