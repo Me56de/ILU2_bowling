@@ -61,4 +61,11 @@ public class GameTest {
 		plusieursLancer(1, 2, 10, 0, 10, 4, 2, 0, 10, 6, 2, 0, 10, 6, 4, 8, 2, 2, 8, 8);
 		assertEquals(131, game.score());
 	}
+
+	@Test
+	public void perfect() {
+		plusieursLancer(10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10);
+		assertEquals(300, game.score());
+	}
+
 }

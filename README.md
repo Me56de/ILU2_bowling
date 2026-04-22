@@ -20,6 +20,6 @@
 - [x] Le cinquième doit renvoyer "18"
 - [x] Le sixième doit renvoyer "24"
 - [x] Le septième doit renvoyer "122"
-- [ ] Le huitième doit renvoyer "131"
-- [ ] Le neuvième doit renvoyer "300"
+- [x] Le huitième doit renvoyer "131"
+- [x] Le neuvième doit renvoyer "300"
 
