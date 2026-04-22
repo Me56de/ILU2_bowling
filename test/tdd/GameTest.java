@@ -3,6 +3,9 @@ package tdd;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import org.junit.jupiter.api.Test;
+
+import com.sun.org.apache.xpath.internal.operations.Plus;
+
 import org.junit.jupiter.api.BeforeEach;
 
 public class GameTest {
@@ -41,5 +44,11 @@ public class GameTest {
 	public void premierSpare() {
 		plusieursLancer(7, 3, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
 		assertEquals(18, game.score());
+	}
+
+	@Test
+	public void premierStrike() {
+		plusieursLancer(10, 3, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+		assertEquals(24, game.score());
 	}
 }
