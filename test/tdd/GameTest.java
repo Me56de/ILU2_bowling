@@ -4,8 +4,6 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import org.junit.jupiter.api.Test;
 
-import com.sun.org.apache.xpath.internal.operations.Plus;
-
 import org.junit.jupiter.api.BeforeEach;
 
 public class GameTest {
@@ -50,5 +48,11 @@ public class GameTest {
 	public void premierStrike() {
 		plusieursLancer(10, 3, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
 		assertEquals(24, game.score());
+	}
+
+	@Test
+	public void casGeneral() {
+		plusieursLancer(1, 2, 10, 0, 10, 4, 2, 0, 10, 6, 2, 0, 10, 6, 4, 8, 2, 2, 7);
+		assertEquals(122, game.score());
 	}
 }
