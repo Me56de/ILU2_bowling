@@ -1,5 +1,7 @@
 package tdd;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 import org.junit.Test;
 
 public class GameTest {
@@ -12,6 +14,6 @@ public class GameTest {
 	@Test
 	public void allMiss() {
 		Game game = new Game();
-		game.lancer(0);
+		assertEquals(0, game.score());
 	}
 }

@@ -2,8 +2,8 @@ package tdd;
 
 public class Game {
 
-	public void lancer(int quilleTombé) {
-		
+	public int score() {
+		return 0;
 	}
 
 
