@@ -12,3 +12,7 @@
 - [ ] B12
 - [ ] B21
 - [ ] B22
+
+- [ ] Le premier doit renvoyer "0"
+- [ ] Le deuxième doit renvoyer "0"
+- [ ] Le troisième doit renvoyer "20"
