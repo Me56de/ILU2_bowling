@@ -2,12 +2,14 @@ package tdd;
 
 public class Game {
 
+	int score = 0;
+	
 	public int score() {
-		return 0;
+		return score;
 	}
 
 	public void roll(int quilleTouchees) {
-		
+		score += quilleTouchees;
 	}
 
 
