@@ -30,4 +30,11 @@ public class GameTest {
 		plusieursLancer(20, 0);
 		assertEquals(0, game.score());
 	}
+	
+	@Test 
+	public void joueurDebutant() {
+		plusieursLancer(10, 1);
+		plusieursLancer(10, 2);
+		assertEquals(30, game.score());
+	}
 }

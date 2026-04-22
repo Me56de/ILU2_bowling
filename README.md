@@ -13,6 +13,10 @@
 - [ ] B21
 - [ ] B22
 
-- [ ] Le premier doit renvoyer "0"
-- [ ] Le deuxième doit renvoyer "0"
-- [ ] Le troisième doit renvoyer "20"
+- [x] Le premier doit renvoyer "0"
+- [x] Le deuxième doit renvoyer "0"
+- [x] Le troisième doit renvoyer "20"
+- [ ] Le quatrième doit renvoyer "30"
+- [ ] Le cinquième doit renvoyer "18"
+- [ ] Le sixième doit renvoyer "24"
+
