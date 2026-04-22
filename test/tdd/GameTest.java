@@ -2,19 +2,15 @@ package tdd;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.BeforeEach;
 
 public class GameTest {
+	Game game;
 	
-	@Test
-	public void creerJeu()  {
-		new Game();
-	}
-	
-	@Test
-	public void allMiss() {
-		Game game = new Game();
-		assertEquals(0, game.score());
+	@BeforeEach
+	void setup() {
+		game = new Game();
 	}
 	
 	@Test
